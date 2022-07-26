@@ -1,12 +1,9 @@
 .container {
     display: flex;
-    width: 300px;
-    height: 400px;
-    align-items: center;
 }
 
 .calculator { 
-    border: 2px solid black;
+    border: 5px solid black;
 }
 
 .row {
@@ -14,33 +11,44 @@
     width: 300px;
 }
 
+.display {
+    border: 2px solid black;
+    background-color: lightcyan;
+    color: black;
+    text-align: right; 
+    font-size: 25px;
+    width: 275px;
+    padding-top: 25px; 
+}
+
 button {
     background-color: gray;
     border: 2px solid black;
     color: white;
     padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
     font-size: 25px;
     height: 80px;
     width: 75px;
 }
 
-.display {
-    border: 2px solid black;
-    background-color: lightcyan;
-    color: black;
-    text-align: center; 
-    font-size: 25px;
-    width: 275px;
-    padding-top: 25px; 
+button:hover{
+    color: orange;
+    border: orange solid 1px;
+    background: white;
 }
+
+.mathSymb:hover{
+    color: red;
+    border: red solid 1px;
+    background:#fff;
+}
+
 .clear {
-    
     background-color: orange;
 } 
 
 .numButton {
     background-color: darkgray;
 }
+
+
