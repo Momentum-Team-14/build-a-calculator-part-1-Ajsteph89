@@ -45,7 +45,7 @@ function lols (){
 
 function sweet (){
     if (display.innerText === '420'){
-        display.innerText = "420 Sweet";
+        display.innerText = "420 U Cool?";
     }
 }
 
