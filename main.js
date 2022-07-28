@@ -2,6 +2,7 @@ let numbers = document.querySelectorAll('.numButton')
 let display = document.querySelector('.display')
 let operators = document.querySelectorAll('.mathSymb')
 let answer = document.getElementById('calculate')
+let clear = document.getElementById('clearButton')
 
 for (let number of numbers){
     number.addEventListener('click', ()=> {
@@ -15,6 +16,10 @@ for (let operator of operators){
 }
 answer.addEventListener('click', ()=> {
     display.innerText = eval(display.innerText);
+});
+
+clear.addEventListener('click', ()=> {
+    display.innerText = '';
 });
 
 
