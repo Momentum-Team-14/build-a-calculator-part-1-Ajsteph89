@@ -19,6 +19,11 @@ for (let operator of operators){
 answer.addEventListener('click', ()=> {
     display.innerText = eval(display.innerText);
     truncate();
+    lols();
+    sweet();
+    unluncky();
+    evil();
+    makeAWish();
 });
 
 clear.addEventListener('click', ()=> {
@@ -29,7 +34,35 @@ function truncate (){
     display.innerText = +parseFloat(eval(display.innerText)).toFixed(7);
 }
 
+function lols (){
+    if (display.innerText === '69'){
+        display.innerText = "69 Nice";
+    }
+}
 
+function sweet (){
+    if (display.innerText === '420'){
+        display.innerText = "420 Sweet";
+    }
+}
+
+function unluncky(){
+    if (display.innerText === '13'){
+        display.innerText = "13 lucky u";
+    }
+}
+
+function evil(){
+    if(display.innerText === '666'){
+        display.innerText = "666 EEEVIL"
+    }
+}
+
+function makeAWish(){
+    if(display.innerText === '1111'){
+        display.innerText = "1111 Wish"
+    }
+}
 
 // function calculate (operator, num1, num2){
 //     if (operator === "+"){

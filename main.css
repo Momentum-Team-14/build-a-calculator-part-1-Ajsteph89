@@ -25,6 +25,8 @@
     font-size: 48px;
     width: 275px;
     padding-top: 25px; 
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 button {
