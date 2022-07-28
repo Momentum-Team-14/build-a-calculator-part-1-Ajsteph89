@@ -4,18 +4,20 @@ let operators = document.querySelectorAll('.mathSymb')
 let answer = document.getElementById('calculate')
 let clear = document.getElementById('clearButton')
 
-
+//listen for clicks to add numbers to display
 for (let number of numbers){
     number.addEventListener('click', ()=> {
         display.innerText += number.innerText;
         charLimit();
     });
 }
+//listen for clicks to add operators to display
 for (let operator of operators){
     operator.addEventListener('click', ()=> {
         display.innerText += operator.innerText;
     });
 }
+//equals sign calculates answer based on displayed text
 answer.addEventListener('click', ()=> {
     display.innerText = eval(display.innerText);
     truncate();
@@ -26,10 +28,11 @@ answer.addEventListener('click', ()=> {
     makeAWish();
 });
 
+//clear button resets display to null
 clear.addEventListener('click', ()=> {
     display.innerText = '';
 });
-
+//Easter eggs
 function truncate (){
     display.innerText = +parseFloat(eval(display.innerText)).toFixed(7);
 }
@@ -63,22 +66,3 @@ function makeAWish(){
         display.innerText = "1111 Wish"
     }
 }
-
-// function calculate (operator, num1, num2){
-//     if (operator === "+"){
-//         let total = num1 + num2;
-//         return total;
-//     }
-//     else if (operator === "-"){
-//         let total = num1 - num2;
-//         return total;
-//     }
-//     else if (operator === "/"){
-//         let total = num1 / num2;
-//         return total;
-//     }
-//     else if (operator === "x"){
-//         let total = num1 * num2;
-//         return total;
-//     }
-// }
