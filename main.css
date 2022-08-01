@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'analog-font';
+    src: url('SFDigitalReadout-Light.ttf');
+}
+
+.container {
+    display: flex;
+}
+
+.calculator { 
+    border: 5px solid black;
+}
+
+.row {
+    display:flex;
+    width: 300px;
+}
+
+.display {
+    font-family: 'analog-font';
+    border: 2px solid black;
+    background-color: lightcyan;
+    color: black;
+    text-align: right; 
+    font-size: 48px;
+    width: 275px;
+    padding-top: 25px; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+button {
+    background-color: gray;
+    border: 2px solid black;
+    color: white;
+    padding: 15px 32px;
+    font-size: 25px;
+    height: 80px;
+    width: 75px;
+}
+
+button:hover{
+    color: orange;
+    border: orange solid 1px;
+    background: white;
+}
+
+.mathSymb:hover{
+    color: red;
+    border: red solid 1px;
+    background:#fff;
+}
+
+.clear {
+    background-color: orange;
+} 
+
+.numButton {
+    background-color: darkgray;
+}
+
+
